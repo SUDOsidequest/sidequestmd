@@ -1,0 +1,186 @@
+{
+  "schemaVersion": "0.1",
+  "title": "The Lesion Decoder Ring",
+  "systems": {
+    "structure": {
+      "label": "Primary structure",
+      "role": "entry_condition",
+      "selectionMode": "single",
+      "required": true,
+      "options": [
+        {
+          "id": "flat",
+          "label": "Flat",
+          "unlocks": [
+            "macule",
+            "patch"
+          ]
+        },
+        {
+          "id": "raised_solid",
+          "label": "Raised & solid",
+          "unlocks": [
+            "papule",
+            "plaque",
+            "nodule"
+          ]
+        },
+        {
+          "id": "fluid_filled",
+          "label": "Fluid-filled",
+          "unlocks": [
+            "vesicle",
+            "bulla"
+          ]
+        },
+        {
+          "id": "purulent",
+          "label": "Purulent",
+          "unlocks": [
+            "pustule"
+          ]
+        },
+        {
+          "id": "transient_edematous",
+          "label": "Transient & puffy",
+          "unlocks": [
+            "wheal"
+          ]
+        }
+      ]
+    },
+    "thing": {
+      "label": "Thing",
+      "role": "thing",
+      "selectionMode": "computed_limited",
+      "terms": [
+        "macule",
+        "patch",
+        "papule",
+        "plaque",
+        "nodule",
+        "vesicle",
+        "bulla",
+        "pustule",
+        "wheal"
+      ]
+    },
+    "numerative": {
+      "label": "Numerative",
+      "role": "numerative",
+      "selectionMode": "single_optional",
+      "options": [
+        "Solitary",
+        "Few",
+        "Multiple",
+        "Numerous"
+      ]
+    },
+    "size": {
+      "label": "Size",
+      "role": "quantifier",
+      "selectionMode": "single_optional",
+      "options": [
+        "1 mm",
+        "2 mm",
+        "3 mm",
+        "5 mm",
+        "0.5 cm",
+        "1 cm",
+        "2 cm",
+        "3 cm",
+        "4 cm"
+      ]
+    },
+    "colour": {
+      "label": "Colour",
+      "role": "epithet",
+      "selectionMode": "multi_optional",
+      "maximumSelections": 2,
+      "options": [
+        "erythematous",
+        "violaceous",
+        "hyperpigmented",
+        "hypopigmented",
+        "skin-colored",
+        "purpuric"
+      ]
+    },
+    "relationship": {
+      "label": "Relationship",
+      "role": "classifier",
+      "selectionMode": "single_optional",
+      "options": [
+        "discrete",
+        "confluent"
+      ]
+    },
+    "arrangement": {
+      "label": "Arrangement",
+      "role": "classifier",
+      "selectionMode": "single_optional",
+      "requiresMultiple": true,
+      "options": [
+        "scattered",
+        "grouped",
+        "linear",
+        "dermatomal"
+      ]
+    },
+    "configuration": {
+      "label": "Configuration",
+      "role": "classifier",
+      "selectionMode": "single_optional",
+      "options": [
+        "annular",
+        "targetoid",
+        "reticulated",
+        "serpiginous"
+      ]
+    },
+    "surface": {
+      "label": "Surface change",
+      "role": "classifier",
+      "selectionMode": "multi_optional",
+      "maximumSelections": 3,
+      "options": [
+        "smooth",
+        "scaly",
+        "crusted",
+        "excoriated",
+        "eroded",
+        "ulcerated",
+        "lichenified",
+        "weeping"
+      ]
+    },
+    "symptoms": {
+      "label": "Patient report",
+      "role": "qualifier",
+      "selectionMode": "multi_optional",
+      "maximumSelections": 3,
+      "options": [
+        "pruritic",
+        "painful",
+        "burning",
+        "asymptomatic"
+      ]
+    },
+    "exam": {
+      "label": "Examination",
+      "role": "qualifier",
+      "selectionMode": "multi_optional",
+      "maximumSelections": 4,
+      "options": [
+        "tender to palpation",
+        "warm",
+        "indurated",
+        "fluctuant",
+        "mobile",
+        "fixed",
+        "expresses purulent material",
+        "expresses keratinous material"
+      ]
+    }
+  }
+}

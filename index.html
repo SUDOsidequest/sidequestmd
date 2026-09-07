@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An SFL-inspired educational tool for dermatologic lesion morphology.">
+  <title>The Lesion Decoder Ring</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="masthead"><span>APPARATUS NO. II</span><span>HAND-CRANKED · MOSTLY ACCURATE</span></header>
+    <section class="hero"><p class="eyebrow">MORPHOLOGY ENGINE / IDEATIONAL MODULE</p><h1>The lesion decoder ring</h1><p class="lede">Feed observations into the apparatus. Each selection opens, closes, or modifies clinical vocabulary downstream. The machine produces morphology language—not a diagnosis.</p></section>
+    <section class="console" aria-label="Machine status"><div><span>SYSTEM STATUS</span><strong id="status" aria-live="polite">Awaiting structural pathway.</strong></div><div><span>REALIZATION</span><strong id="progress">0 / 8 systems realized</strong></div></section>
+    <p class="instructions">All stations are visible. Brass controls are available; locked controls require an earlier choice. Empty sockets are intentional: they mark lexical systems that remain <em>unrealized</em>.</p>
+    <section id="workflow" class="workflow" aria-label="Morphology workflow"></section>
+    <section class="result" aria-label="Generated chart phrase"><div class="stamp"><p>CHART READS</p><output id="chart" aria-live="polite">Engage primary structure to begin.</output><button id="copy" type="button">COPY PHRASE</button><small id="feedback"></small></div><div class="readout-box"><div class="readout-title"><h2>STRUCTURED SFL READOUT</h2><span>available ≠ realized</span></div><div id="readout"></div></div></section>
+    <section class="crank-area"><div id="artifact" class="artifact" role="img" aria-label="Whimsical reference illustration"></div><button id="crank" type="button">TURN THE CRANK</button><p id="caption">FIG. 1 — reference image. Diagnostic correlation not guaranteed.</p></section>
+    <details class="panel"><summary>LIFT THE PANEL: WHAT THE MACHINE IS DOING</summary><div><p>Clinical description is a <strong>system network</strong>: a series of meaningful choices, not a pile of jargon. The structural pathway is an entry condition; it unlocks compatible lesion classes. Colour and surface change are additive. Dashed empty sockets represent available choices that have not been realized.</p><div class="legend"><span><i class="single"></i> one-of-many system</span><span><i class="multi"></i> additive system</span><span><i class="computed"></i> gated result</span><span><i class="empty"></i> unrealized slot</span><span><i class="locked"></i> interlock</span></div></div></details>
+    <footer>Morphology-practice tool only. It does not diagnose lesions, provide medical advice, or substitute for clinical evaluation. Verify documentation against your own examination, institutional standards, and supervisory guidance.</footer>
+  </main><script src="app.js"></script>
+</body></html>
